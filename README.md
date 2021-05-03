@@ -1,3 +1,3 @@
 # Spanner Terraform Example
 
-Terraform template and sample Node.js application for Cloud Spanner.
+Terraform templates for Cloud Spanner.
