@@ -1,0 +1,73 @@
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Ignore Mac .DS_Store files
+.DS_Store
+
+
+# Directories
+.terraform/
+
+# Ignored vscode files
+.vscode/
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+/developer-documents
+/omegatrade-app/frontend/node_modules/
+/frontend/dist
+/omegatrade-app/frontend/package-lock.json
+/omegatrade-app/backend/package-lock.json
+/omegatrade-app/backend/node_modules
+/backend/nodejs-spanner
+/backend/fakedata.js
+/omegatrade-app/frontend/dist/
+
+
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
