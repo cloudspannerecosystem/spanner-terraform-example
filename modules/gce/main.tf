@@ -61,7 +61,7 @@ resource "google_compute_instance" "omega_trade" {
   network_interface {
     network = var.vpc_network_name
     access_config {
-      nat_ip       = google_compute_address.omege_trade_static_ip.address
+      nat_ip       = google_compute_address.omega_trade_static_ip.address
       network_tier = "PREMIUM"
     }
   }
