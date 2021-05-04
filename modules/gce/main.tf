@@ -33,7 +33,7 @@ resource "google_service_account" "omega_trade_sa" {
   }
 }
 
-resource "google_compute_address" "omege_trade_static_ip" {
+resource "google_compute_address" "omega_trade_static_ip" {
   name       = local.name_static_vm_ip
   region     = local.region
   depends_on = [google_project_service.networking_api]
