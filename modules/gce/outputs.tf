@@ -14,7 +14,7 @@ output "instance_id" {
 }
 
 output "self_link" {
-  value       = google_compute_address.omege_trade_static_ip.self_link
+  value       = google_compute_address.omega_trade_static_ip.self_link
   description = "The URI of the External Static IP resource."
 }
 
