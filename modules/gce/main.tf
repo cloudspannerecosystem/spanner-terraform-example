@@ -4,7 +4,7 @@ terraform {
 
 locals {
   instance_name = format("%s-%s", var.instance_name, var.suffix)
-  region        = var.region != "" ? var.region : data.google_client_config.google_client.region
+  zone          = format("%s-%s", var.region, var.zone)
   network_tags  = tolist(toset(var.network_tags))
 
   name_static_vm_ip = format("%s-ext-ip-%s", var.instance_name, var.suffix)
@@ -35,7 +35,7 @@ resource "google_service_account" "omega_trade_sa" {
 
 resource "google_compute_address" "omega_trade_static_ip" {
   name       = local.name_static_vm_ip
-  region     = local.region
+  region     = var.region
   depends_on = [google_project_service.networking_api]
 
   timeouts {
@@ -47,7 +47,7 @@ resource "google_compute_address" "omega_trade_static_ip" {
 resource "google_compute_instance" "omega_trade" {
   name         = local.instance_name
   machine_type = var.instance_machine_type
-  zone         = format("%s-%s", local.region, var.zone)
+  zone         = local.zone
   tags         = local.network_tags
   project      = var.project
 

@@ -24,12 +24,12 @@ variable "project" {
   description = "GCP Project ID"
 }
 
+## --- OPTIONAL PARAMETERS ------------------------------------------------------------------------------------------------
 variable "zone" {
   type        = string
+  default     = "b"
   description = "The zone that the machine should be created in."
 }
-
-## --- OPTIONAL PARAMETERS ------------------------------------------------------------------------------------------------
 
 variable "instance_machine_type" {
   type        = string
