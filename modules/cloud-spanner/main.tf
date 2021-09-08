@@ -23,7 +23,10 @@ resource "google_spanner_instance" "omega_trade" {
   name         = local.instance_id
   config       = var.config
   display_name = local.display_name
+  /* disable or comment num_nodes argument for processing units and uncomment processing_units argument as well in variables.tf file
+  as at most one of processing_units or num_nodes can be present in terraform. */
   num_nodes    = var.num_nodes
+  # processing_units = var.processing_units 
   labels       = var.labels_var
   project      = var.project
 
