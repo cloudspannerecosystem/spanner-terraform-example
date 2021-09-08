@@ -36,7 +36,7 @@ variable "num_nodes" {
 
 # variable "processing_units" {
 #   type        = number
-#   description = "The number of processing units allocated to this instance. Uncomment if want to go with processing units, instead of node counts."
+#   description = "The number of processing units allocated to this instance. Specify quantities up to 1000 processing units in multiples of 100 processing units (100, 200, 300 and so on) & specify greater quantities in multiples of 1000 processing units (1000, 2000, 3000 and so on). Uncomment if want to go with processing units, instead of node counts."
 # }
 
 ## --- OPTIONAL PARAMETERS ------------------------------------------------------------------------------------------------
