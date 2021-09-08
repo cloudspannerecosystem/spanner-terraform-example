@@ -31,8 +31,13 @@ variable "config" {
 
 variable "num_nodes" {
   type        = number
-  description = "The number of nodes allocated to this instance."
+  description = "The number of nodes allocated to this instance. Comment num_nodes and uncomment processing_units if want to go with processing units, instead of node counts."
 }
+
+# variable "processing_units" {
+#   type        = number
+#   description = "The number of processing units allocated to this instance."
+# }
 
 ## --- OPTIONAL PARAMETERS ------------------------------------------------------------------------------------------------
 
