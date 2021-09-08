@@ -23,7 +23,8 @@ module omegatrade {
   instance_id = var.spanner_instance_id
   dbname      = var.spanner_dbname
   config      = var.spanner_config
-  num_nodes   = var.spanner_nodes
+  num_nodes   = var.spanner_nodes # comment num_nodes and uncomment processing_units if want to go with processing_units instead of node counts
+  # processing_units = var.spanner_processing_units
   labels_var  = var.spanner_labels
   project     = var.project
 }
